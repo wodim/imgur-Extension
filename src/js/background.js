@@ -410,6 +410,7 @@ function setContextMenus() {
         });
 
         evt.addEventListener(evt.EVENT_SUCCESS, function (data) {
+            data.link = data.link.replace("http://i.imgur.com", "http://img.imgur.com");
 
             if (evt.type == "capture") {
 
